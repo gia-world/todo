@@ -12,17 +12,17 @@ export default function TodoForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full flex justify-between gap-4">
+    <form onSubmit={handleSubmit} className="flex w-full justify-between gap-4">
       <input
         type="text"
-        className="border flex-1 border-gray-300 py-1 px-2 rounded"
+        className="flex-1 rounded border border-gray-300 px-2 py-1"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
       <button
         type="submit"
         disabled={noText}
-        className="bg-sky-500 rounded text-white px-4"
+        className="rounded bg-sky-500 px-4 font-bold text-white"
       >
         작성
       </button>

@@ -37,7 +37,7 @@ export default function TodoItem({ todo }: Props) {
       <div className="flex-1">
         {isEdit ? (
           <input
-            className="border flex-1 border-gray-300 py-1 px-2 rounded"
+            className="flex-1 rounded border border-gray-300 px-2 py-1"
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -49,13 +49,13 @@ export default function TodoItem({ todo }: Props) {
 
       <button
         onClick={() => toggleEdit(todo.id)}
-        className="bg-sky-500 rounded text-white px-3 py-0.5"
+        className="rounded bg-sky-500 px-3 py-0.5 text-white"
       >
         {isEdit ? "수정완료" : "수정"}
       </button>
       <button
         onClick={() => removeTodo(todo.id)}
-        className="bg-red-500 rounded text-white px-3 py-0.5"
+        className="rounded bg-red-500 px-3 py-0.5 text-white"
       >
         삭제
       </button>

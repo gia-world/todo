@@ -6,8 +6,8 @@ import TodoList from "./TodoList";
 
 export default function TodoContainer() {
   return (
-    <main className="max-w-md mt-2 mx-4">
-      <h1 className="py-4 px-2 text-center font-bold text-2xl">To Do List</h1>
+    <main className="mx-4 mt-2 max-w-md">
+      <h1 className="px-2 py-4 text-center text-2xl font-bold">To Do List</h1>
       <TodoProvider>
         <TodoForm />
         <TodoList />
